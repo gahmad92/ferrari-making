@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from './Navbar'
+
 
 const About = () => {
   return (
     <>
+<Navbar/>
+   
   <div className="py-16 bg-gray-50">
   <div className="text-4xl text-center font-bold text-gray-900 mb-12">About Us</div>
   
@@ -10,9 +14,9 @@ const About = () => {
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
       
       {/* Left Big Column - Video */}
-      <div className="lg:col-span-8">
+      <div className="lg:col-span-7">
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-          <video 
+          {/* <video 
             className="w-full h-full object-cover"
             autoPlay 
             muted 
@@ -22,13 +26,10 @@ const About = () => {
             <source src="/ferrai-1.mp4" type="video/mp4" />
          
             Your browser does not support the video tag.
-          </video>
+          </video> */}
+          <img src="https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg" alt=""  width='900px'/>
           {/* Fallback image if video doesn't load */}
-          <img 
-            src="https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg" 
-            alt="About us fallback" 
-            className="w-full h-full object-cover hidden"
-          />
+          
         </div>
       </div>
 

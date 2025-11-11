@@ -12,22 +12,25 @@ import ContactSubmissions from "../components/ContactSubmission";
 
 import Portfolio2 from "../components/Porfolio2";
 import PracticeHook from "../components/PracticeHook";
+import Navbar from "../components/Navbar";
 
 
 const Home = () => {
   return <>
 
   {/* <PracticeHook/> */}
+  <Navbar/>
   <Hero/>
-  <About/>
+  
+  {/* <About/>
   <Services/>
-  <Portfolio/>
+  <Portfolio/> */}
   {/* <PintrestStyle/> */}
-  <Portfolio2/>
+  {/* <Portfolio2/>
  <Testimonials/>
  <ShowMap/>
  <Contact/>
- <ContactSubmissions/>
+ <ContactSubmissions/> */}
 
 
   </>;

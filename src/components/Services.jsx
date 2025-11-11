@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Navbar from "./Navbar";
 
 const Services = () => {
   const [ref, inView] = useInView({
@@ -118,6 +119,10 @@ const Services = () => {
   ];
 
   return (
+
+
+    <>
+    <Navbar/>
     <div className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
@@ -133,11 +138,11 @@ const Services = () => {
             transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
             className="inline-block mb-4"
           >
-            <span className="text-4xl font-semibold tracking-wider text-red-600 uppercase bg-blue-100 px-4 py-2 rounded-full">
+            <span className="text-1xl font-semibold tracking-wider text-red-600 uppercase bg-blue-100 px-4 py-2 rounded-full">
               OUR SERVICES
             </span>
           </motion.div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4" style={{fontFamily:'monospace'}}>
             Elevate Your <span className="text-orange-600">Game</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -299,6 +304,7 @@ const Services = () => {
         </motion.div>
       </div>
     </div>
+    </>
   );
 };
 
