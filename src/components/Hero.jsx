@@ -12,8 +12,14 @@ const Hero = () => {
                  <span className="text-orange-600">Peakplay </span>
                   <span className="hidden lg:inline">is finally here</span>
                 </h1>
-                <p className="custom-para mt-4 text-2xl">
-                  Elevate Your Game, Every Day
+                 <p className="custom-para mt-4 text-2xl">
+                  Elevate Your Game, Every Day{" "}
+                  <a
+                    href="#"
+                    className="sm:hidden inline-block rounded-md border border-transparent bg-indigo-600 px-4 py-2 mx-2 text-center text-sm font-medium text-white hover:bg-indigo-700"
+                  >
+                    register for Race or watch live
+                  </a>
                 </p>
 
                 <p className="mt-4 text-[clamp(1rem,2.5vw,1.25rem)] text-gray-500">
