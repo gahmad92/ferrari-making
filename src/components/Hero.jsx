@@ -8,26 +8,12 @@ const Hero = () => {
           <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
             <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
               <div className="sm:max-w-lg">
-                {/* <h1 className="custom-heading1 text-[clamp(1.5rem,5vw,3.75rem)] font-bold tracking-tight text-gray-900">
-                  <span className="text-orange-600">Peakplay </span>
-                  <span className="hidden lg:inline text-5xl">is finally here</span>
-                </h1> */}
                 <h1 className="custom-heading1 text-[clamp(1.5rem,5vw,3.75rem)] font-bold tracking-tight text-gray-900">
-                  <span className="text-orange-600 text-4xl sm:text-[clamp(1.5rem,5vw,3.75rem)]">
-                    Peakplay{" "}
-                  </span>
-                  <span className="hidden lg:inline text-5xl">
-                    is finally here
-                  </span>
+                 <span className="text-orange-600">Peakplay </span>
+                  <span className="hidden lg:inline">is finally here</span>
                 </h1>
                 <p className="custom-para mt-4 text-2xl">
-                  Elevate Your Game, Every Day{" "}
-                  <a
-                    href="#"
-                    className="flex justify-center sm:hidden rounded-md border border-transparent bg-indigo-600 px-2 py-1 my-4 mx-2 text-center text-sm font-medium text-white hover:bg-indigo-700"
-                  >
-                    register for race or watch live
-                  </a>
+                  Elevate Your Game, Every Day
                 </p>
 
                 <p className="mt-4 text-[clamp(1rem,2.5vw,1.25rem)] text-gray-500">
@@ -191,7 +177,7 @@ const Hero = () => {
                     </div>
                   </div>
 
-                  <a
+                <a
                     href="#"
                     className="hidden md:inline-block rounded-md border border-transparent bg-indigo-600 px-4 py-2 mx-2 text-center font-medium text-white hover:bg-indigo-700"
                   >
