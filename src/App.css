@@ -1,0 +1,59 @@
+@import "tailwindcss";
+html{
+    scroll-behavior: smooth;
+}
+/* for Hero component animations */
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes verticalScroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-float {
+  animation: floatUpDown 6s ease-in-out infinite;
+}
+
+.animate-vertical-scroll-1 {
+  animation: verticalScroll 25s linear infinite;
+}
+
+.animate-vertical-scroll-2 {
+  animation: verticalScroll 30s linear infinite;
+}
+
+.animate-vertical-scroll-3 {
+  animation: verticalScroll 35s linear infinite;
+}
+
+.animate-vertical-scroll-1:hover,
+.animate-vertical-scroll-2:hover,
+.animate-vertical-scroll-3:hover {
+  animation-play-state: paused;
+}
+
+.custom-heading1{
+     font-family: "Playfair Display", serif;
+}
+.custom-para{
+    /* background-color: rgba(179, 50, 50, 0.775);
+    color: white;
+    padding-left: 30px; */
+   
+@apply text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-400 to-yellow-500;
+
+}
