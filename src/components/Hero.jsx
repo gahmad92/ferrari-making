@@ -177,15 +177,15 @@ const Hero = () => {
                     </div>
                   </div>
 
-                  <a
+                <a
                     href="#"
-                    className="inline-block rounded-md border border-transparent bg-indigo-600 px-4 py-2 mx-2 text-center font-medium text-white hover:bg-indigo-700"
+                    className="hidden md:inline-block rounded-md border border-transparent bg-indigo-600 px-4 py-2 mx-2 text-center font-medium text-white hover:bg-indigo-700"
                   >
                     Register for Race
                   </a>
                   <a
                     href="#"
-                    className="inline-block rounded-md border border-transparent bg-red-500 px-3 py-2 text-center font-medium text-white hover:bg-indigo-700"
+                    className="hidden md:inline-block rounded-md border border-transparent bg-red-500 px-3 py-2 text-center font-medium text-white hover:bg-indigo-700"
                   >
                     Watch live
                   </a>
