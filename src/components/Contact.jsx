@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import ContactSubmissions from "./ContactSubmission";
+import Footer from "./Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -79,7 +80,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-gray-700 mb-2 "
                   >
                     Full Name
                   </label>
@@ -90,7 +91,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition duration-200 bg-gray-100"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -109,7 +110,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition duration-200 bg-gray-100"
                     placeholder="Enter your email address"
                   />
                 </div>
@@ -128,17 +129,19 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows="6"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 resize-vertical"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition duration-200 resize-vertical bg-gray-100"
                     placeholder="Enter your message..."
                   />
                 </div>
 
-                <button
-                  type="submit"
-                  className="w-full bg-indigo-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-indigo-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200"
-                >
-                  Send Message
-                </button>
+                <div className="flex justify-center">
+                  <button
+                    type="submit"
+                    className="w-40 bg-[#10B981] text-white py-3 px-5 rounded-lg font-bold hover:bg-indigo-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200"
+                  >
+                    Submit
+                  </button>
+                </div>
               </form>
             </div>
 
@@ -164,29 +167,7 @@ const Contact = () => {
               </div>
 
               {/* Location Details */}
-              <div className="mt-4 space-y-2">
-                <div className="flex items-center">
-                  <span className="text-gray-500 mr-3">📍</span>
-                  <div>
-                    <p className="font-semibold text-gray-800">
-                      Ferrari Headquarters
-                    </p>
-                    <p className="text-gray-600 text-sm">
-                      Via Abetone Inferiore, 4, 41053 Maranello MO, Italy
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-center">
-                  <span className="text-gray-500 mr-3">📞</span>
-                  <p className="text-gray-600">+39 0536 949111</p>
-                </div>
-
-                <div className="flex items-center">
-                  <span className="text-gray-500 mr-3">🕒</span>
-                  <p className="text-gray-600">Mon-Fri: 9:00 AM - 6:00 PM</p>
-                </div>
-              </div>
+            
 
               {/* Directions Button */}
               <div className="mt-6">
@@ -194,7 +175,7 @@ const Contact = () => {
                   href="https://www.google.com/maps/dir/?api=1&destination=Ferrari+Maranello+Italy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-orange-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-orange-700 transition duration-200 flex items-center justify-center gap-2"
+                  className="w-full bg-teal-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-teal-700 transition duration-200 flex items-center justify-center gap-2"
                 >
                   <span>Get Directions</span>
                   <svg
@@ -215,11 +196,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-       
       </section>
-
-      
-     
+      <Footer/>
     </>
   );
 };
