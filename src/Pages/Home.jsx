@@ -3,7 +3,6 @@ import React from "react";
 import Hero from "../components/Hero";
 
 
-
 import Navbar from "../components/Navbar";
 
 
@@ -15,9 +14,8 @@ const Home = () => {
   <Navbar/>
   <Hero/>
   
-  {/* <About/>
-  <Services/>
-  <Portfolio/> */}
+  
+ 
   {/* <PintrestStyle/> */}
   {/* <Portfolio2/>
  <Testimonials/>

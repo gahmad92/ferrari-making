@@ -89,7 +89,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 `}
       >
         {/* Header */}
-        <div className="p-14 h-full">
+        <div className="p-11 h-full">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center" onClick={onClose}>
               <span className="custom-fonts text-2xl text-white bg-transparent font-bold">
